@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 430px;
+            width: 250px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .box img{
+            height: 150px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+        }
+        #text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 10px; */
+        }
+        #para{
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .amount{
+            background-color: rgb(106, 106, 223);
+            height: 40px;
+            width: 80%;
+            border-radius: 10px;
+            margin-left: 25px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .amount img{
+            height: 40px;
+            width: 40px;
+            padding-left: 7px;
+        }
+        #link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 7px;
+        }
+        #link a{
+            text-decoration: none;
+        }
+        .pay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pay button{
+            height: 33px;
+            width: 80%;
+            border-radius: 10px;
+            background-color: rgb(7, 7, 100);
+            color: #fff;
+        }
+        #cancel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #cancel a{
+            text-decoration: none;
+            color: #212121;
+            font-weight: 800;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="icon.jpg" alt="icon">
+            <div id="text">
+                <h2>Order Summary</h2>
+            </div>
+            <div id="para">
+                <p>
+                    Lorem, ipsum dolor sit Iure asperiores nam, recusandae necessitatibus ad quia dicta voluptas doloremque nulla doloribus.
+                </p>
+            </div>
+            <div class="amount">
+                
+                <img src="music.png" alt="music">
+                
+                <div id="text2">
+                    <p>Amount</p>
+                    <p>$99.9/year</p>
+                </div>
+                <div id="link">
+                    <a href="change">Change</a>
+                </div>
+            </div>
+            <div class="pay">
+                <button>Proceed to Payment</button>
+            </div>
+            <div id="cancel">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
